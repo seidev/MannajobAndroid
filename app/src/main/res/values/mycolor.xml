@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name = "MYOrange">#FFFF9800</color>
+    <color name = "Orange">#FFC107</color>
+    <color name = "money">#F44336</color>
+    <color name = "date">#1E88E5</color>
+    <color name = "Gray">#B2D8D8D8</color>
+</resources>

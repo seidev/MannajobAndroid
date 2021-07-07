@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/tab1"
+        app:showAsAction="collapseActionView"
+        android:enabled="true"
+        android:icon="@drawable/menu_bookicon32"
+        android:title="match"/>
+    <item
+        android:id="@+id/tab2"
+        app:showAsAction="collapseActionView"
+        android:icon="@drawable/menu_bullhorn32"
+        android:title="service" />
+    <item
+        android:id="@+id/tab3"
+        app:showAsAction="collapseActionView"
+        android:enabled="true"
+        android:icon="@drawable/menu_person32"
+        android:title="mypage" />
+</menu>

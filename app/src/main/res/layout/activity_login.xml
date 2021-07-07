@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="로그인"
+            android:textColor="@color/MYOrange"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <EditText
+        android:id="@+id/login_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/editbox"
+        android:ems="13"
+        android:hint="ID"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:password="true"
+        android:id="@+id/login_passwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/editbox"
+        android:ems="13"
+        android:hint="PASSWORD"
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/login_ok_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/select_button"
+            android:text="로그인" />
+
+        <Button
+            android:id="@+id/register_m_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/select_button"
+            android:text="회원가입" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="90dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/findid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:textSize="12sp"
+            android:text="아이디 찾기"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text=" / "/>
+        <TextView
+            android:id="@+id/findpasswd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="비밀번호 찾기"/>
+    </LinearLayout>
+
+    <com.nhn.android.naverlogin.ui.view.OAuthLoginButton
+        android:id="@+id/buttonOAuthLoginImg"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <com.kakao.usermgmt.LoginButton
+            android:id="@+id/kakaobtn"
+            android:background="@drawable/kakao_login_medium_narrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleY="0.92"
+            android:scaleX="0.92"
+            android:layout_marginTop="5dp"
+            tools:layout_editor_absoluteX="0dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

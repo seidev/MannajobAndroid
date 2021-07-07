@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".JoinAgree">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:text="회원가입 약관 동의(필수)"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <ScrollView
+        android:layout_width="360dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/editbox_gray"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center|center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal"
+                android:gravity="center"
+                android:text="@string/agree1" />
+        </LinearLayout>
+    </ScrollView>
+
+    <CheckBox
+        android:id="@+id/agree1"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+        android:button="@null"
+        android:text="상기 약관을 모두 이해하였으며 동의 합니다."
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="개인정보 수집·이용 동의(필수) "
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <ScrollView
+        android:layout_width="360dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/editbox_gray"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center|center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal"
+                android:gravity="center"
+                android:text="@string/agree2" />
+        </LinearLayout>
+    </ScrollView>
+
+    <CheckBox
+        android:id="@+id/agree2"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:text="상기 약관을 모두 이해하였으며 동의 합니다."
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+        android:button="@null"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/agreeok_btn"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="다 음"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/select_button_orange"/>
+
+
+</LinearLayout>
